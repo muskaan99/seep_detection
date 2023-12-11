@@ -1,0 +1,5 @@
+The code is written using Python and TensorFlow as a framework. UNet is a popular and effective architecture for image segmentation tasks. UNet Architecture has been implemented to perform the image segmentation task. Data augmentation has been done and then the data has been split into 80-10-10 ratio for train-validation-test.
+
+A custom loss function comprising evaluation metrics, dice loss and bce loss is used. Adam optimizer is used to update the model's weights during training. While training, the model's performance is monitored using the dice coefficient and IoU metrics. Adam's optimizer has been used to train the model. Early stopping has been implemented and the model would train for 50 epochs. When the validation loss does not improve for 10 consecutive epochs, training will stop early.
+
+Finally, three comparison plots for IoU, loss and dice coefficient are generated for both train and validation sets. The performance on test set can be seen from the comparison images of ground truth vs predictions. At the end, we save the model as well the weights.
